@@ -7,7 +7,7 @@ import pandas as pd
 # сохраняю урл сайта, к которому буду подключаться
 bank_id = 1771062  # ID банка на сайте
 page, max_page = 1, 20
-url = f'https://www.banki.ru/services/questions-answers/?id={bank_id}'
+url = f'https://www.banki.ru/services/questions-answers/?id={bank_id}&p={page}'
 res = requests.get(url)  # подключаюсь по указанному урлу
 
 soup = BeautifulSoup(res.text)  # это сам парсер
