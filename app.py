@@ -13,4 +13,4 @@ from routes import *
 from models import *
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(port=4893, debug=True)
